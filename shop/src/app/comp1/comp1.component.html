@@ -1,0 +1,9 @@
+<input type="text" [(ngModel)]="item">
+<button (click)="submit()">Submit</button>
+<div *ngFor="let x of list">
+    <p>{{x}}</p><button (click)="deleteP(x)">X</button>
+</div>
+<div>
+    <p>{{items.name}}</p>
+</div>
+<app-comp2 [textD]="item2"></app-comp2>
